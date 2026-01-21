@@ -11,7 +11,7 @@ and publishes a public, reproducible daily brief via GitHub Pages.
 
 ## 🌐 Live Dashboard
 
-https://<your-username>.github.io/panopticon/
+https://aglucaci.github.io/panopticon/
 
 ---
 
