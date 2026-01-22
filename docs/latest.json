@@ -1,10 +1,10 @@
 {
-  "generated_at_local": "2026-01-21 19:21:11",
-  "generated_at_utc": "2026-01-21 19:21:16",
+  "generated_at_local": "2026-01-22 13:26:22",
+  "generated_at_utc": "2026-01-22 13:26:30",
   "days": 1,
   "window_utc": {
-    "mindate": "2026/01/20",
-    "maxdate": "2026/01/21"
+    "mindate": "2026/01/21",
+    "maxdate": "2026/01/22"
   },
   "sections": [
     {
@@ -26,7 +26,7 @@
     {
       "label": "Metagenomics methods",
       "query": "metagenomics AND (benchmark* OR pipeline OR \"quality control\" OR assembly OR classification)",
-      "count": 7,
+      "count": 4,
       "items": [
         {
           "pmid": "41563008",
@@ -36,24 +36,6 @@
           "pubdate": "2026",
           "link": "https://pubmed.ncbi.nlm.nih.gov/41563008/",
           "abstract_snippet": "The growth of metagenomics-derived amino acid sequence data has transformed our understanding of protein function, microbial diversity, and evolutionary relationships. However, the vast majority of these proteins remain functionally uncharacterized. Grouping t…"
-        },
-        {
-          "pmid": "41559018",
-          "title": "Congenital babesiosis in China: first molecularly confirmed case of vertical transmission of",
-          "authors": "Junwen Liu, Dongfang Li, Sen Wang, Shuai Gao, Bin Xu, Junlong Zhao",
-          "journal": "Emerging microbes & infections",
-          "pubdate": "2026",
-          "link": "https://pubmed.ncbi.nlm.nih.gov/41559018/",
-          "abstract_snippet": "Congenital babesiosis is rarely reported globally. We report a 74-day-old male infant presented with fever, pallor, and severe, life-threatening haemolytic anaemia (haemoglobin: 45 g/L). The infant had 16% parasitemia with ring forms evident on peripheral bloo…"
-        },
-        {
-          "pmid": "41557465",
-          "title": "MetaFX: feature extraction from whole-genome metagenomic sequencing data.",
-          "authors": "Artem Ivanov, Vladimir Popov, Maxim Morozov, Evgenii Olekhnovich, Vladimir Ulyantsev",
-          "journal": "Bioinformatics (Oxford, England)",
-          "pubdate": "2026",
-          "link": "https://pubmed.ncbi.nlm.nih.gov/41557465/",
-          "abstract_snippet": "Microbial communities consist of thousands of microorganisms and viruses and have a tight connection with an environment, such as gut microbiota modulation of host body metabolism. However, the direct relationship between the presence of certain microorganism …"
         },
         {
           "pmid": "41510663",
@@ -81,39 +63,39 @@
           "pubdate": "2026",
           "link": "https://pubmed.ncbi.nlm.nih.gov/41503787/",
           "abstract_snippet": "B vitamins (VBs) are essential micronutrients, yet their microbial production across natural habitats remains poorly understood. We analyzed 126,931 metagenome-assembled genomes to map the distribution of VB producers and constructed a database of 87 VB synthe…"
-        },
-        {
-          "pmid": "41334926",
-          "title": "Nutrient limitation shapes functional traits of mycorrhizal fungi and phosphorus-cycling bacteria across an elevation gradient.",
-          "authors": "Hannah B Shulman, Jessica A M Pyle, Aimée T Classen, David W Inouye, Ruth Simberloff, Patrick O Sorensen",
-          "journal": "mSystems",
-          "pubdate": "2026",
-          "link": "https://pubmed.ncbi.nlm.nih.gov/41334926/",
-          "abstract_snippet": "In nutrient-limited high-elevation ecosystems, plants rely on arbuscular mycorrhizal (AM) fungi to provide mineral phosphorus (P) in the form of phosphate (PO"
         }
       ]
     },
     {
       "label": "Influenza evolution",
       "query": "(influenza OR flu) AND (evolution OR \"positive selection\" OR \"antigenic drift\" OR clade)",
-      "count": 1,
-      "items": [
-        {
-          "pmid": "41557749",
-          "title": "The receptor binding properties of H5Ny influenza A viruses have evolved to bind to avian-type mucin-like O-glycans.",
-          "authors": "Julia Weber, Niels L D Ponse, Xueyong Zhu, María Ríos Carrasco, Alvin X Han, Mathis Funk",
-          "journal": "PLoS pathogens",
-          "pubdate": "2026",
-          "link": "https://pubmed.ncbi.nlm.nih.gov/41557749/",
-          "abstract_snippet": "Highly pathogenic H5Ny influenza A viruses are causing unprecedented, season-independent outbreaks across avian and mammalian species, including dairy cattle, a novel reservoir. The sialoside-binding properties of influenza A hemagglutinin (HA) are strongly re…"
-        }
-      ]
+      "count": 0,
+      "items": []
     },
     {
       "label": "H5N1 / avian influenza",
       "query": "H5N1 OR \"highly pathogenic avian influenza\" OR HPAI",
-      "count": 0,
-      "items": []
+      "count": 2,
+      "items": [
+        {
+          "pmid": "41565217",
+          "title": "Milk as a Transmission Vehicle for Highly Pathogenic Avian Influenza A (H5N1).",
+          "authors": "Carrie L Byington, Lisa Stellwagen, Lars Bode, Mitra Hooshmand, Donald P Pizzo, Hana Russo",
+          "journal": "Pediatrics",
+          "pubdate": "2026",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/41565217/",
+          "abstract_snippet": "Highly pathogenic avian influenza A (H5N1) (H5N1 hereafter) is an emerging pathogen in mammals. The recent recognition of H5N1 in dairy cattle increases opportunities for human exposure and infection and may accelerate a trajectory toward sustained human-to-hu…"
+        },
+        {
+          "pmid": "41564896",
+          "title": "Detection of Avian Influenza H5-Specific Antibodies by Chemiluminescent Assays.",
+          "authors": "Ana Citlali Márquez, Saina Beitari, Tahereh Valadbeigy, Linda Hoang, Yohannes Berhane, Agatha N Jassem",
+          "journal": "Emerging infectious diseases",
+          "pubdate": "2026",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/41564896/",
+          "abstract_snippet": "We evaluated 2 electrochemiluminescence serologic assays to detect avian influenza H5 antibodies. Both assays identified H5 antibodies from both serum and dried blood spots and had strong specificity and minimal cross-reactivity in human and avian samples. Suc…"
+        }
+      ]
     },
     {
       "label": "Human virome",
@@ -124,8 +106,17 @@
     {
       "label": "AMR metagenomics",
       "query": "(\"antimicrobial resistance\" OR AMR) AND metagenomics",
-      "count": 1,
+      "count": 2,
       "items": [
+        {
+          "pmid": "41566339",
+          "title": "Microbiome and resistome successions in pig carcasses and fresh pork meat throughout slaughtering, processing and shelf-life.",
+          "authors": "Elena Fernández-Trapote, José F Cobo-Díaz, Márcia Oliveira, Alba Puente, Daniel Berdejo, Héctor Puente",
+          "journal": "Microbiome",
+          "pubdate": "2026",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/41566339/",
+          "abstract_snippet": "Slaughterhouses and meat cutting plants represent potential hotspots for the spread and transfer of spoilage and pathogenic, including antimicrobial resistant, bacteria to meat and meat products. Here, we characterise the progression of the microbiome and resi…"
+        },
         {
           "pmid": "41562608",
           "title": "Survey of bacteria associated with septic arthritis in beef feedlot cattle.",
