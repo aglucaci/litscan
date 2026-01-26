@@ -1,10 +1,10 @@
 {
-  "generated_at_local": "2026-01-25 13:09:03",
-  "generated_at_utc": "2026-01-25 13:09:09",
+  "generated_at_local": "2026-01-26 13:25:15",
+  "generated_at_utc": "2026-01-26 13:25:21",
   "days": 1,
   "window_utc": {
-    "mindate": "2026/01/24",
-    "maxdate": "2026/01/25"
+    "mindate": "2026/01/25",
+    "maxdate": "2026/01/26"
   },
   "sections": [
     {
@@ -16,8 +16,18 @@
     {
       "label": "Metagenomics methods",
       "query": "metagenomics AND (benchmark* OR pipeline OR \"quality control\" OR assembly OR classification)",
-      "count": 0,
-      "items": []
+      "count": 1,
+      "items": [
+        {
+          "pmid": "41581112",
+          "title": "Metagenomic screening of the virome of symptomatic tomato plants from La Réunion Island uncovers a complex of viruses including a newly identified whitefly-transmitted polerovirus.",
+          "authors": "Jean-Michel Lett, Sarah Scussel, Sélim Ben Chéhida, Murielle Hoareau, Denis Filloux, Emmanuel Fernandez",
+          "journal": "Archives of virology",
+          "pubdate": "2026",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/41581112/",
+          "abstract_snippet": "Using unbiased high-throughput sequencing for metagenomic screening of viruses in diseased tomato plants, we identified a viral complex that includes viruses previously reported in tomato crops on La Réunion Island as well as a novel polerovirus, tentatively n…"
+        }
+      ]
     },
     {
       "label": "Influenza evolution",
