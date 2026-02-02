@@ -1,10 +1,10 @@
 {
-  "generated_at_local": "2026-02-01 13:24:31",
-  "generated_at_utc": "2026-02-01 13:24:37",
+  "generated_at_local": "2026-02-02 13:40:54",
+  "generated_at_utc": "2026-02-02 13:41:01",
   "days": 1,
   "window_utc": {
-    "mindate": "2026/01/31",
-    "maxdate": "2026/02/01"
+    "mindate": "2026/02/01",
+    "maxdate": "2026/02/02"
   },
   "sections": [
     {
@@ -18,15 +18,6 @@
       "query": "metagenomics AND (benchmark* OR pipeline OR \"quality control\" OR assembly OR classification)",
       "count": 12,
       "items": [
-        {
-          "pmid": "41617733",
-          "title": "Depth Resolved Metagenomic Dataset from Surface and Deep Chlorophyll Maximum Layers in the Western Pacific Ocean.",
-          "authors": "Satheeswaran Thangaraj, Jun Sun",
-          "journal": "Scientific data",
-          "pubdate": "2026",
-          "link": "https://pubmed.ncbi.nlm.nih.gov/41617733/",
-          "abstract_snippet": "Stratified microbial communities are central to ocean biogeochemical cycles, yet their vertical structure and functional potential remain under characterized in oligotrophic regions. We present a metagenomic dataset from surface ocean and the deep chlorophyll …"
-        },
         {
           "pmid": "41609929",
           "title": "A Beginner's Guide to Using DeepVirFinder for Viral Sequence Identification From Metagenomic Datasets.",
@@ -109,15 +100,6 @@
           "abstract_snippet": "Metagenomic sequencing has revolutionised the field of microbial ecology, as it has led to cultivation-independent exploration of complicated microbial communities. The assembly of metagenome-assembled genomes has provided genome-scale information about uncult…"
         },
         {
-          "pmid": "41412637",
-          "title": "Dairy environment and seasons affect the microbiome of a traditional artisanal cheese.",
-          "authors": "Ilario Ferrocino, Federica Biolcati, Manuela Giordano, Marta Bertolino, Giuseppe Zeppa, Luca Cocolin",
-          "journal": "Food research international (Ottawa, Ont.)",
-          "pubdate": "2026",
-          "link": "https://pubmed.ncbi.nlm.nih.gov/41412637/",
-          "abstract_snippet": "Cheese microbiome is a complex community shaped by raw ingredients and by the production environment that significantly influences final product characteristics. While environmental microbiome can establish stable resident populations, their composition remain…"
-        },
-        {
           "pmid": "41406735",
           "title": "In vivo metabolism of fruity carboxylic esters in the human oral cavity is partly driven by microbial enzymes.",
           "authors": "Paula Calvo López-Dávalos, Teresa Requena, M Ángeles Pozo-Bayón, Carolina Muñoz-González",
@@ -125,6 +107,24 @@
           "pubdate": "2026",
           "link": "https://pubmed.ncbi.nlm.nih.gov/41406735/",
           "abstract_snippet": "Food flavor perception is shaped by biochemical events during oral processing, with oral metabolism remaining poorly understood. This study investigated the oral fate of fruity carboxylic esters and its relationship with salivary and microbiological parameters…"
+        },
+        {
+          "pmid": "41371154",
+          "title": "Virus circulation in native, introduced, and farmed mustelids in Poland.",
+          "authors": "Sanna Tervo, Andrzej Zalewski, Hanna Vauhkonen, Marek Nieoczym, Marta Kołodziej-Sobocińska, Saana Lehikoinen",
+          "journal": "Virology",
+          "pubdate": "2026",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/41371154/",
+          "abstract_snippet": "American mink (Neogale vison) are known carriers of various viruses, including many zoonoses. Their susceptibility to a wide range of pathogens and anatomical similarities to human lungs raise concerns about their potential role in facilitating interspecies tr…"
+        },
+        {
+          "pmid": "41365245",
+          "title": "Novel circoviruses identified in short-finned pilot whale and orca from the North Atlantic Ocean.",
+          "authors": "Matthew D De Koch, Simona Kraberger, Russell Fielding, Kendal Smith, Kelsie Schiavone, Katharine R Hall",
+          "journal": "Virology",
+          "pubdate": "2026",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/41365245/",
+          "abstract_snippet": "The family Circoviridae comprises viruses with small single-stranded DNA genomes that are known to infect various animals, resulting in considerable morbidity and mortality in some hosts. Circoviruses have been recently identified through metagenomic sequencin…"
         }
       ]
     },
@@ -237,8 +237,17 @@
     {
       "label": "H5N1 / avian influenza",
       "query": "H5N1 OR \"highly pathogenic avian influenza\" OR HPAI",
-      "count": 9,
+      "count": 10,
       "items": [
+        {
+          "pmid": "41565217",
+          "title": "Milk as a Transmission Vehicle for Highly Pathogenic Avian Influenza A (H5N1).",
+          "authors": "Carrie L Byington, Lisa Stellwagen, Lars Bode, Mitra Hooshmand, Donald P Pizzo, Hana Russo",
+          "journal": "Pediatrics",
+          "pubdate": "2026",
+          "link": "https://pubmed.ncbi.nlm.nih.gov/41565217/",
+          "abstract_snippet": "Highly pathogenic avian influenza A (H5N1) (H5N1 hereafter) is an emerging pathogen in mammals. The recent recognition of H5N1 in dairy cattle increases opportunities for human exposure and infection and may accelerate a trajectory toward sustained human-to-hu…"
+        },
         {
           "pmid": "41391378",
           "title": "Combating Highly Pathogenic Avian Influenza in South Korea: A 15-year retrospective and forward-looking study.",

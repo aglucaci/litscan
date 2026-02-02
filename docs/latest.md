@@ -1,6 +1,6 @@
 # Daily PubMed Watch (Viromics / Metagenomics)
 
-**Updated:** 2026-02-01 13:24:31  
+**Updated:** 2026-02-02 13:40:54  
 
 **Window:** last 1 day(s)
 
@@ -10,9 +10,6 @@
 
 ## Metagenomics methods — 12 result(s)
 
-- **[Depth Resolved Metagenomic Dataset from Surface and Deep Chlorophyll Maximum Layers in the Western Pacific Ocean.](https://pubmed.ncbi.nlm.nih.gov/41617733/)**  
-  Satheeswaran Thangaraj, Jun Sun · Scientific data · 2026  
-  _Stratified microbial communities are central to ocean biogeochemical cycles, yet their vertical structure and functional potential remain under characterized in oligotrophic regions. We present a metagenomic dataset from surface ocean and the deep chlorophyll …_
 - **[A Beginner's Guide to Using DeepVirFinder for Viral Sequence Identification From Metagenomic Datasets.](https://pubmed.ncbi.nlm.nih.gov/41609929/)**  
   Yuqian Mo, Nathan Ahlgren, Jed A Fuhrman, Fengzhu Sun, Shengwei Hou · Current protocols · 2026  
   _Identifying viral sequences from metagenomic datasets is critical for investigating their origins, evolutionary patterns, and ecological functions. Previously, we developed a novel deep learning software, DeepVirFinder, to predict viral sequences from shotgun …_
@@ -40,12 +37,15 @@
 - **[Artificial intelligence in metagenome-assembled genome reconstruction: Tools, pipelines, and future directions.](https://pubmed.ncbi.nlm.nih.gov/41506577/)**  
   Kalpana Sagar, Km Priti, Harish Chandra · Journal of microbiological methods · 2026  
   _Metagenomic sequencing has revolutionised the field of microbial ecology, as it has led to cultivation-independent exploration of complicated microbial communities. The assembly of metagenome-assembled genomes has provided genome-scale information about uncult…_
-- **[Dairy environment and seasons affect the microbiome of a traditional artisanal cheese.](https://pubmed.ncbi.nlm.nih.gov/41412637/)**  
-  Ilario Ferrocino, Federica Biolcati, Manuela Giordano, Marta Bertolino, Giuseppe Zeppa, Luca Cocolin · Food research international (Ottawa, Ont.) · 2026  
-  _Cheese microbiome is a complex community shaped by raw ingredients and by the production environment that significantly influences final product characteristics. While environmental microbiome can establish stable resident populations, their composition remain…_
 - **[In vivo metabolism of fruity carboxylic esters in the human oral cavity is partly driven by microbial enzymes.](https://pubmed.ncbi.nlm.nih.gov/41406735/)**  
   Paula Calvo López-Dávalos, Teresa Requena, M Ángeles Pozo-Bayón, Carolina Muñoz-González · Food chemistry · 2026  
   _Food flavor perception is shaped by biochemical events during oral processing, with oral metabolism remaining poorly understood. This study investigated the oral fate of fruity carboxylic esters and its relationship with salivary and microbiological parameters…_
+- **[Virus circulation in native, introduced, and farmed mustelids in Poland.](https://pubmed.ncbi.nlm.nih.gov/41371154/)**  
+  Sanna Tervo, Andrzej Zalewski, Hanna Vauhkonen, Marek Nieoczym, Marta Kołodziej-Sobocińska, Saana Lehikoinen · Virology · 2026  
+  _American mink (Neogale vison) are known carriers of various viruses, including many zoonoses. Their susceptibility to a wide range of pathogens and anatomical similarities to human lungs raise concerns about their potential role in facilitating interspecies tr…_
+- **[Novel circoviruses identified in short-finned pilot whale and orca from the North Atlantic Ocean.](https://pubmed.ncbi.nlm.nih.gov/41365245/)**  
+  Matthew D De Koch, Simona Kraberger, Russell Fielding, Kendal Smith, Kelsie Schiavone, Katharine R Hall · Virology · 2026  
+  _The family Circoviridae comprises viruses with small single-stranded DNA genomes that are known to infect various animals, resulting in considerable morbidity and mortality in some hosts. Circoviruses have been recently identified through metagenomic sequencin…_
 
 ## Influenza evolution — 11 result(s)
 
@@ -83,8 +83,11 @@
   Alix Flamant, Alicia Demirjian, Theresa Lamagni, Julie Toubiana, Pierre R Smeesters, Jérémie F Cohen · The Lancet. Infectious diseases · 2026  
   _During the late phase of the COVID-19 pandemic, several high-income countries reported a surge in invasive group A streptococcal (iGAS) infections, with notable paediatric morbidity and mortality. This Review explores three potential drivers of this increase: …_
 
-## H5N1 / avian influenza — 9 result(s)
+## H5N1 / avian influenza — 10 result(s)
 
+- **[Milk as a Transmission Vehicle for Highly Pathogenic Avian Influenza A (H5N1).](https://pubmed.ncbi.nlm.nih.gov/41565217/)**  
+  Carrie L Byington, Lisa Stellwagen, Lars Bode, Mitra Hooshmand, Donald P Pizzo, Hana Russo · Pediatrics · 2026  
+  _Highly pathogenic avian influenza A (H5N1) (H5N1 hereafter) is an emerging pathogen in mammals. The recent recognition of H5N1 in dairy cattle increases opportunities for human exposure and infection and may accelerate a trajectory toward sustained human-to-hu…_
 - **[Combating Highly Pathogenic Avian Influenza in South Korea: A 15-year retrospective and forward-looking study.](https://pubmed.ncbi.nlm.nih.gov/41391378/)**  
   Sung Dae Park, Yeonsu Oh, Dae Sung Yoo · Preventive veterinary medicine · 2026  
   _Highly Pathogenic Avian Influenza (HPAI), caused by the Orthomyxoviridae family of RNA viruses, poses a serious threat to the global poultry industry, resulting in severe economic losses and raising public health concerns. In South Korea, HPAI outbreaks have r…_
