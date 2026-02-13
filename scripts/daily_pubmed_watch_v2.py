@@ -118,7 +118,22 @@ THEMES: Dict[str, Theme] = {
         negatives=NEGATIVE_COMMON,
         priority=1.35,
     ),
-    "Recombination & mosaicism": Theme(
+        "Cancer evolution & somatic selection": Theme(
+        name="Cancer evolution & somatic selection",
+        core_queries=[
+            '("cancer evolution" OR "tumor evolution" OR "somatic evolution" OR "clonal evolution") '
+            'AND (genomics OR sequencing OR phylogen* OR "single-cell")',
+            '(cancer OR tumor OR lymphoma OR leukemia) '
+            'AND ("positive selection" OR "clonal selection" OR "driver mutation" OR "dN/dS" OR "selection inference")',
+            '("mutational signature" OR "mutational signatures") AND (cancer OR tumor) '
+            'AND (evolution OR selection OR phylogeny)',
+        ],
+        boosters=BOOSTERS_CORE + BOOSTERS_METHODS + BOOSTERS_CANCER,
+        negatives=NEGATIVE_COMMON,
+        priority=1.20,
+    ),
+
+"Recombination & mosaicism": Theme(
         name="Recombination & mosaicism",
         core_queries=[
             '(recombination OR "mosaic genome" OR breakpoint OR "gene conversion") AND (virus OR virome OR pathogen)',
