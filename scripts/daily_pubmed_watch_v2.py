@@ -95,6 +95,21 @@ BOOSTERS_ML: List[str] = [
     "AlphaFold",
 ]
 
+BOOSTERS_CANCER: List[str] = [
+    '"cancer evolution"',
+    '"tumor evolution"',
+    '"somatic evolution"',
+    '"clonal evolution"',
+    '"clonal selection"',
+    '"subclonal"',
+    '"driver mutation"',
+    '"mutational signature"',
+    '"mutational signatures"',
+    "lymphoma",
+    "leukemia",
+    '"immuno-oncology"',
+]
+
 
 @dataclass
 class Theme:
