@@ -39,7 +39,6 @@ jobs:
       # - logo in logos/litscan_logo.png (used by HTML)
       LITSCAN_SCRIPT: scripts/daily_pubmed_watch_v2.py
       LITSCAN_SITE_DIR: docs
-      LITSCAN_LOGO_PATH: https://raw.githubusercontent.com/aglucaci/litscan/refs/heads/main/logo/liscan_logo.png
 
       # Defaults (can be overridden below by mode)
       DAYS: "1"
@@ -57,7 +56,6 @@ jobs:
           set -euo pipefail
           test -f "${LITSCAN_SCRIPT}" || (echo "Missing ${LITSCAN_SCRIPT}" && exit 1)
           test -d "${LITSCAN_SITE_DIR}" || (echo "Missing ${LITSCAN_SITE_DIR}/ directory" && exit 1)
-#          test -f "${LITSCAN_LOGO_PATH}" || (echo "Missing ${LITSCAN_LOGO_PATH} (needed for logo+favicon)" && exit 1)
 
       - name: Setup Python
         uses: actions/setup-python@v5
