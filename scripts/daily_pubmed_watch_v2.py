@@ -495,9 +495,9 @@ def write_outputs(outdir_docs: str, payload: Dict[str, Any]) -> None:
     html_body: List[str] = []
     html_body.append("<!doctype html><html><head><meta charset='utf-8'/>")
     html_body.append("<meta name='viewport' content='width=device-width,initial-scale=1'/>")
-    html_body.append("<link rel='icon' type='image/png' href='logos/litscan_logo.png'/>")
-    html_body.append("<link rel='shortcut icon' type='image/png' href='logos/litscan_logo.png'/>")
-    html_body.append("<link rel='apple-touch-icon' href='logos/litscan_logo.png'/>")
+    html_body.append("<link rel='icon' type='image/png' href='https://raw.githubusercontent.com/aglucaci/litscan/refs/heads/main/logo/liscan_logo.png'/>")
+    html_body.append("<link rel='shortcut icon' type='image/png' href='https://raw.githubusercontent.com/aglucaci/litscan/refs/heads/main/logo/liscan_logo.png'/>")
+    html_body.append("<link rel='apple-touch-icon' href='https://raw.githubusercontent.com/aglucaci/litscan/refs/heads/main/logo/liscan_logo.png'/>")
     html_body.append("<title>LitScan</title>")
     html_body.append("""
 <style>
@@ -554,7 +554,7 @@ def write_outputs(outdir_docs: str, payload: Dict[str, Any]) -> None:
     html_body.append("<header class='top-header'>")
     html_body.append("<div class='top'>")
     html_body.append("<div class='brand'>")
-    html_body.append("<img src='logos/litscan_logo.png' alt='LitScan Logo' class='logo'/>")
+    html_body.append("<img src='https://raw.githubusercontent.com/aglucaci/litscan/refs/heads/main/logo/liscan_logo.png' alt='LitScan Logo' class='logo'/>")
     html_body.append("<div class='brand-text'>")
     html_body.append("<h1>LitScan</h1>")
     html_body.append(
