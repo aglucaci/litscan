@@ -1,0 +1,60 @@
+radar_name: Viral Evolution Radar
+description: >
+  Tracks viral mutation, immune escape, recombination, host jumps,
+  phylodynamics, and genomic surveillance.
+
+sources:
+  - pubmed
+  - biorxiv
+  - medrxiv
+
+queries:
+  - "viral evolution"
+  - "immune escape"
+  - "antigenic drift"
+  - "viral recombination"
+  - "genomic surveillance"
+
+filters:
+  date_range: "last_90_days"
+  language: "english"
+
+signal_profile:
+  immune_escape:
+    description: "Immune evasion and antigenic change"
+    terms:
+      - immune escape
+      - antigenic drift
+      - neutralization escape
+      - antigenic mapping
+    weight: 2.5
+
+  transmission:
+    description: "Spread, host range, and outbreak relevance"
+    terms:
+      - host jump
+      - spillover
+      - lineage replacement
+      - outbreak
+    weight: 2.0
+
+  methods:
+    description: "Evolutionary and genomic analysis methods"
+    terms:
+      - phylodynamics
+      - phylogenetics
+      - molecular clock
+      - genomic epidemiology
+    weight: 1.8
+
+scoring:
+  topic_relevance_weight: 0.35
+  recency_weight: 0.20
+  signal_weight: 0.35
+  source_weight: 0.10
+
+outputs:
+  - dashboard
+  - csv
+  - bibtex
+  - markdown

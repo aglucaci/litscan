@@ -1,0 +1,60 @@
+radar_name: Metagenomics Radar
+description: >
+  Tracks metagenomic methods, microbiome profiling, MAGs, strain tracking,
+  viromes, antimicrobial resistance, and functional profiling.
+
+sources:
+  - pubmed
+  - biorxiv
+  - medrxiv
+
+queries:
+  - "metagenomics"
+  - "microbiome"
+  - "metagenome assembled genome"
+  - "strain tracking"
+  - "functional metagenomics"
+
+filters:
+  date_range: "last_90_days"
+  language: "english"
+
+signal_profile:
+  methods:
+    description: "Metagenomic analysis and sequencing methods"
+    terms:
+      - metagenomic assembly
+      - long-read sequencing
+      - strain tracking
+      - functional profiling
+    weight: 2.0
+
+  surveillance:
+    description: "Monitoring and public health relevance"
+    terms:
+      - antimicrobial resistance
+      - resistome
+      - pathogen detection
+      - genomic surveillance
+    weight: 2.2
+
+  resources:
+    description: "Reusable datasets, atlases, and references"
+    terms:
+      - reference catalog
+      - genome catalog
+      - metagenome assembled genomes
+      - benchmark
+    weight: 1.6
+
+scoring:
+  topic_relevance_weight: 0.35
+  recency_weight: 0.20
+  signal_weight: 0.35
+  source_weight: 0.10
+
+outputs:
+  - dashboard
+  - csv
+  - bibtex
+  - markdown

@@ -1,0 +1,60 @@
+radar_name: Cancer Evolution Radar
+description: >
+  Tracks cancer evolution, clonal dynamics, therapy resistance, tumor
+  phylogenetics, and single-cell methods.
+
+sources:
+  - pubmed
+  - biorxiv
+  - medrxiv
+
+queries:
+  - "cancer evolution"
+  - "clonal evolution"
+  - "tumor phylogeny"
+  - "therapy resistance"
+  - "subclonal architecture"
+
+filters:
+  date_range: "last_90_days"
+  language: "english"
+
+signal_profile:
+  biological_process:
+    description: "Tumor evolution and clonal dynamics"
+    terms:
+      - clonal selection
+      - subclonal expansion
+      - tumor evolution
+      - lineage tracing
+    weight: 2.0
+
+  methods:
+    description: "Methods that reveal cancer evolutionary structure"
+    terms:
+      - single-cell sequencing
+      - phylogenetic reconstruction
+      - mutational signatures
+      - spatial transcriptomics
+    weight: 1.5
+
+  clinical_relevance:
+    description: "Clinical progression and treatment outcomes"
+    terms:
+      - relapse
+      - minimal residual disease
+      - treatment resistance
+      - metastasis
+    weight: 2.5
+
+scoring:
+  topic_relevance_weight: 0.35
+  recency_weight: 0.20
+  signal_weight: 0.35
+  source_weight: 0.10
+
+outputs:
+  - dashboard
+  - csv
+  - bibtex
+  - markdown

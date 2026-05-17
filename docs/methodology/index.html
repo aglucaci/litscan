@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>Methodology - ResearchRadar</title>
+<style>
+  :root{--fg:#1f2328;--muted:#57606a;--border:#d0d7de;--chip:#f6f8fa;--ink:#0b1220;--panel:#f6f8fb;--accent:#0f766e;--shadow:0 12px 34px rgba(31,35,40,.10)}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:1120px;margin:28px auto;padding:0 18px;line-height:1.55;color:var(--fg);background:#fff}
+  a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0 18px;border-bottom:1px solid var(--border);margin-bottom:30px}
+  .brand{display:flex;align-items:center;gap:12px}.logo{height:40px;width:40px;border-radius:8px}.wordmark{font-weight:760;font-size:18px;color:var(--ink)}
+  .appnav{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.appnav a{color:var(--muted);font-size:.92em;padding:6px 8px;border-radius:8px}.appnav a.active{color:var(--ink);background:var(--chip);border:1px solid var(--border)}
+  .hero{padding:12px 0 24px;border-bottom:1px solid var(--border);margin-bottom:20px}.hero h1{margin:0;color:var(--ink);font-size:40px;letter-spacing:0}.hero p{max-width:800px;color:var(--muted);font-size:18px}
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin:18px 0}.card{grid-column:span 4;border:1px solid var(--border);border-radius:8px;background:#fff;padding:14px;box-shadow:var(--shadow)}.wide{grid-column:span 6}.full{grid-column:span 12}
+  .card h2,.card h3{margin:0 0 8px;color:var(--ink)}.card p{margin:0 0 10px;color:var(--muted)}.muted{color:var(--muted)}
+  .btn{display:inline-block;border:1px solid var(--border);border-radius:8px;background:var(--chip);color:var(--ink);padding:8px 12px;font-weight:650;margin-right:6px}.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+  .chip{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid var(--border);border-radius:999px;padding:4px 9px;font-size:.86em;margin:3px 4px 3px 0}.score{background:#ecfdf5;border-color:#99f6e4;color:#064e3b}
+  .steps{counter-reset:step}.step{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;border:1px solid var(--border);border-radius:8px;padding:12px;margin:10px 0}.step:before{counter-increment:step;content:counter(step);display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:999px;background:var(--ink);color:#fff;font-weight:700}
+  .panel{border:1px solid var(--border);border-radius:8px;background:var(--panel);padding:14px;margin:14px 0}.yaml,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}.yaml{white-space:pre-wrap;background:#0b1220;color:#e5eef8;border-radius:8px;padding:12px;overflow:auto}
+  table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid var(--border);padding:8px;text-align:left}th{background:var(--chip);color:var(--ink)}
+  @media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column}.card,.wide,.full{grid-column:span 12}.hero h1{font-size:32px}}
+</style>
+</head><body><div class='topbar'><div class='brand'><img src='https://raw.githubusercontent.com/aglucaci/litscan/refs/heads/main/logo/ResearchRadar_logo.png' alt='ResearchRadar Logo' class='logo'/><div class='wordmark'>ResearchRadar</div></div><nav class='appnav'><a href='../'>Home</a><a href='../create/'>Create Radar</a><a href='../explore/'>Explore Radars</a><a href='../templates/'>Templates</a><a href='../examples/'>Examples</a><a class='active' href='../methodology/'>Methodology</a><a href='../docs/'>Docs</a><a href='../about/'>About</a></nav></div><section class='hero'><h1>Methodology</h1><p>How the Research Relevance Score ranks papers using transparent, user-defined signals.</p></section>
+<div class='panel'><p><b>ResearchRadar does not decide whether a paper is good.</b> It ranks papers according to the topic and priority signals defined by the user.</p></div>
+<div class='grid'>
+  <div class='card'><h3>Topic relevance</h3><p>Does the title, abstract, and metadata match the radar query set?</p></div>
+  <div class='card'><h3>Recency weighting</h3><p>Recent papers can receive a boost, with decay over time.</p></div>
+  <div class='card'><h3>Priority term matching</h3><p>Matched terms from the signal profile increase score according to category weights.</p></div>
+  <div class='card'><h3>Source metadata</h3><p>Journal, source, publication type, DOI, PMID, and preprint metadata can influence filtering and ranking.</p></div>
+  <div class='card'><h3>User-defined weights</h3><p>Users decide whether methods, clinical relevance, datasets, reviews, or recency matter most.</p></div>
+  <div class='card'><h3>Limitations</h3><p>Abstract-based scoring can miss subtle relevance and is not a substitute for expert review or systematic review.</p></div>
+</div>
+<div class='panel'><h2>Formula</h2><div class='yaml'>Research Relevance Score =
+topic relevance
++ recency
++ priority term matches
++ method signals
++ source metadata
++ optional user feedback</div></div>
+<div class='muted' style='margin:28px 0 10px'>ResearchRadar is open-source literature intelligence infrastructure. Static pages are generated with the radar dashboard.</div></body></html>

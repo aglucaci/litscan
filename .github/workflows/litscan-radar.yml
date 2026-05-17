@@ -1,4 +1,4 @@
-name: LitScan Radar
+name: ResearchRadar
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ on:
           - weekly
 
   schedule:
-    # Daily: 9:00am ET ≈ 14:00 UTC (standard time) / 13:00 UTC (DST)
+    # Daily: 9:00am ET is approximately 14:00 UTC standard time / 13:00 UTC DST.
     # Keep UTC stable; adjust if you care about DST exactly.
     - cron: "0 13 * * *"
 
@@ -24,21 +24,17 @@ permissions:
   contents: write
 
 concurrency:
-  group: litscan-${{ github.ref }}
+  group: researchradar-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  litscan:
+  researchradar:
     runs-on: ubuntu-latest
 
     env:
       PYTHONUNBUFFERED: "1"
-      # Repo path expectations:
-      # - script at repo root: daily_pubmed_watch_v2.py
-      # - output site in docs/
-      # - logo in logos/litscan_logo.png (used by HTML)
-      LITSCAN_SCRIPT: scripts/daily_pubmed_watch_v2.py
-      LITSCAN_SITE_DIR: docs
+      RESEARCHRADAR_SCRIPT: scripts/daily_pubmed_watch_v2.py
+      RESEARCHRADAR_SITE_DIR: docs
 
       # Defaults (can be overridden below by mode)
       DAYS: "1"
@@ -54,8 +50,8 @@ jobs:
       - name: Validate required files exist
         run: |
           set -euo pipefail
-          test -f "${LITSCAN_SCRIPT}" || (echo "Missing ${LITSCAN_SCRIPT}" && exit 1)
-          test -d "${LITSCAN_SITE_DIR}" || (echo "Missing ${LITSCAN_SITE_DIR}/ directory" && exit 1)
+          test -f "${RESEARCHRADAR_SCRIPT}" || (echo "Missing ${RESEARCHRADAR_SCRIPT}" && exit 1)
+          test -d "${RESEARCHRADAR_SITE_DIR}" || (echo "Missing ${RESEARCHRADAR_SITE_DIR}/ directory" && exit 1)
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -66,7 +62,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # LitScan v2 uses requests; keep deps minimal & fast
+      # ResearchRadar uses requests; keep deps minimal & fast
           pip install requests
 
       - name: Decide run mode (daily vs weekly)
@@ -98,18 +94,18 @@ jobs:
             echo "MAX_RESULTS=12" >> "$GITHUB_ENV"
           fi
 
-      - name: Run LitScan (${{ steps.mode.outputs.mode }})
+      - name: Run ResearchRadar (${{ steps.mode.outputs.mode }})
         run: |
           set -euo pipefail
-          echo "Running mode=${{ steps.mode.outputs.mode }} DAYS=${DAYS} MAX=${MAX_RESULTS}"
-          python "${LITSCAN_SCRIPT}" --days "${DAYS}" --max "${MAX_RESULTS}"
+          echo "Running ResearchRadar mode=${{ steps.mode.outputs.mode }} DAYS=${DAYS} MAX=${MAX_RESULTS}"
+          python "${RESEARCHRADAR_SCRIPT}" --days "${DAYS}" --max "${MAX_RESULTS}"
 
       - name: Sanity check output
         run: |
           set -euo pipefail
-          test -f "${LITSCAN_SITE_DIR}/index.html" || (echo "Missing ${LITSCAN_SITE_DIR}/index.html after run" && exit 1)
+          test -f "${RESEARCHRADAR_SITE_DIR}/index.html" || (echo "Missing ${RESEARCHRADAR_SITE_DIR}/index.html after run" && exit 1)
           echo "Top of generated index.html:"
-          head -n 25 "${LITSCAN_SITE_DIR}/index.html" || true
+          head -n 25 "${RESEARCHRADAR_SITE_DIR}/index.html" || true
 
       - name: Commit changes (only if changed)
         run: |
@@ -118,7 +114,7 @@ jobs:
           git config user.email "github-actions@github.com"
 
           # Stage only the site output (and any other outputs you expect)
-          git add "${LITSCAN_SITE_DIR}/"
+          git add "${RESEARCHRADAR_SITE_DIR}/"
 
           # Optionally stage other outputs if your script writes them elsewhere:
           # git add outputs/ || true
@@ -128,7 +124,7 @@ jobs:
             exit 0
           fi
 
-          MSG="LitScan ${{
+          MSG="ResearchRadar ${{
             steps.mode.outputs.mode
           }} update $(date -u +'%Y-%m-%d')"
           git commit -m "$MSG"

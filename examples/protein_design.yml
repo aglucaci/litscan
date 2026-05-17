@@ -1,0 +1,61 @@
+radar_name: Protein Design Radar
+description: >
+  Tracks protein engineering, diffusion models, protein language models,
+  inverse folding, enzyme design, antibody design, and experimental validation.
+
+sources:
+  - pubmed
+  - biorxiv
+  - medrxiv
+  - arxiv
+
+queries:
+  - "protein design"
+  - "protein engineering"
+  - "generative model"
+  - "diffusion model"
+  - "protein language model"
+
+filters:
+  date_range: "last_90_days"
+  language: "english"
+
+signal_profile:
+  methods:
+    description: "Computational protein design methods"
+    terms:
+      - diffusion model
+      - protein language model
+      - inverse folding
+      - generative model
+    weight: 2.0
+
+  validation:
+    description: "Experimental validation or benchmark evidence"
+    terms:
+      - wet-lab validation
+      - binding assay
+      - functional assay
+      - benchmark
+    weight: 2.5
+
+  applications:
+    description: "Applied protein engineering outcomes"
+    terms:
+      - enzyme design
+      - antibody design
+      - therapeutic protein
+      - stability
+    weight: 1.5
+
+scoring:
+  topic_relevance_weight: 0.35
+  recency_weight: 0.20
+  signal_weight: 0.35
+  source_weight: 0.10
+
+outputs:
+  - dashboard
+  - csv
+  - bibtex
+  - markdown

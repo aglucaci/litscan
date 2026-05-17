@@ -1,0 +1,10 @@
+case_study,method,rank,relevance
+cancer_evolution,date_only,1,0
+cancer_evolution,keyword_count,1,1
+cancer_evolution,researchradar,1,2
+viral_evolution,date_only,1,0
+viral_evolution,keyword_count,1,1
+viral_evolution,researchradar,1,2
+metagenomics,date_only,1,0
+metagenomics,keyword_count,1,1
+metagenomics,researchradar,1,2

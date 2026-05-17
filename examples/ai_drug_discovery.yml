@@ -1,0 +1,61 @@
+radar_name: AI Drug Discovery Radar
+description: >
+  Tracks generative chemistry, docking, virtual screening, target discovery,
+  benchmark datasets, and translational AI for drug discovery.
+
+sources:
+  - pubmed
+  - biorxiv
+  - medrxiv
+  - arxiv
+
+queries:
+  - "AI drug discovery"
+  - "generative chemistry"
+  - "virtual screening"
+  - "molecular docking"
+  - "drug discovery foundation model"
+
+filters:
+  date_range: "last_90_days"
+  language: "english"
+
+signal_profile:
+  methods:
+    description: "Computational methods and architectures"
+    terms:
+      - generative model
+      - diffusion model
+      - graph neural network
+      - foundation model
+    weight: 2.0
+
+  validation:
+    description: "Experimental or benchmark evidence"
+    terms:
+      - wet-lab validation
+      - prospective validation
+      - benchmark
+      - assay
+    weight: 2.5
+
+  translation:
+    description: "Therapeutic and clinical relevance"
+    terms:
+      - lead optimization
+      - target validation
+      - clinical candidate
+      - therapeutic
+    weight: 1.8
+
+scoring:
+  topic_relevance_weight: 0.35
+  recency_weight: 0.20
+  signal_weight: 0.35
+  source_weight: 0.10
+
+outputs:
+  - dashboard
+  - csv
+  - bibtex
+  - markdown

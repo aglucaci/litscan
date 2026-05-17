@@ -1,0 +1,60 @@
+radar_name: Single-Cell Genomics Radar
+description: >
+  Tracks single-cell genomics, multiome assays, perturb-seq, lineage tracing,
+  spatial omics, atlases, and computational analysis methods.
+
+sources:
+  - pubmed
+  - biorxiv
+  - medrxiv
+
+queries:
+  - "single-cell genomics"
+  - "single-cell RNA-seq"
+  - "multiome"
+  - "perturb-seq"
+  - "lineage tracing"
+
+filters:
+  date_range: "last_90_days"
+  language: "english"
+
+signal_profile:
+  methods:
+    description: "Single-cell assay and analysis methods"
+    terms:
+      - single-cell RNA-seq
+      - single-cell ATAC-seq
+      - multiome
+      - perturb-seq
+    weight: 2.0
+
+  resources:
+    description: "Atlases, datasets, and reusable resources"
+    terms:
+      - cell atlas
+      - reference atlas
+      - benchmark dataset
+      - data portal
+    weight: 1.8
+
+  biological_insight:
+    description: "Biological programs and lineage structure"
+    terms:
+      - cell state
+      - lineage tracing
+      - differentiation
+      - cell-cell communication
+    weight: 1.7
+
+scoring:
+  topic_relevance_weight: 0.35
+  recency_weight: 0.20
+  signal_weight: 0.35
+  source_weight: 0.10
+
+outputs:
+  - dashboard
+  - csv
+  - bibtex
+  - markdown

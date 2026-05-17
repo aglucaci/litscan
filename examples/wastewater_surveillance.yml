@@ -1,0 +1,60 @@
+radar_name: Wastewater Surveillance Radar
+description: >
+  Tracks wastewater-based epidemiology, pathogen detection, AMR, viral load,
+  public health monitoring, and genomic surveillance.
+
+sources:
+  - pubmed
+  - biorxiv
+  - medrxiv
+
+queries:
+  - "wastewater surveillance"
+  - "wastewater epidemiology"
+  - "wastewater metagenomics"
+  - "pathogen detection"
+  - "antimicrobial resistance wastewater"
+
+filters:
+  date_range: "last_90_days"
+  language: "english"
+
+signal_profile:
+  public_health:
+    description: "Signals useful for public health monitoring"
+    terms:
+      - outbreak detection
+      - early warning
+      - public health surveillance
+      - disease monitoring
+    weight: 2.5
+
+  pathogens:
+    description: "Pathogen and resistance signals"
+    terms:
+      - viral load
+      - antimicrobial resistance
+      - pathogen detection
+      - variant detection
+    weight: 2.2
+
+  methods:
+    description: "Sampling, sequencing, and analytical methods"
+    terms:
+      - composite sampling
+      - metagenomic sequencing
+      - qPCR
+      - normalization
+    weight: 1.7
+
+scoring:
+  topic_relevance_weight: 0.35
+  recency_weight: 0.20
+  signal_weight: 0.35
+  source_weight: 0.10
+
+outputs:
+  - dashboard
+  - csv
+  - bibtex
+  - markdown

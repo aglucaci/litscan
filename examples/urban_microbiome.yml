@@ -1,0 +1,60 @@
+radar_name: Urban Microbiome Radar
+description: >
+  Tracks built environment microbiomes, city-scale sampling, transit systems,
+  wastewater, urban viromes, and public health surveillance.
+
+sources:
+  - pubmed
+  - biorxiv
+  - medrxiv
+
+queries:
+  - "urban microbiome"
+  - "built environment microbiome"
+  - "transit microbiome"
+  - "city-scale metagenomics"
+  - "wastewater virome"
+
+filters:
+  date_range: "last_90_days"
+  language: "english"
+
+signal_profile:
+  spatial_sampling:
+    description: "Spatial or city-scale study design"
+    terms:
+      - geospatial
+      - city-scale
+      - transit system
+      - built environment
+    weight: 2.0
+
+  pathogen_surveillance:
+    description: "Pathogen and public health monitoring"
+    terms:
+      - pathogen detection
+      - genomic surveillance
+      - wastewater
+      - biosurveillance
+    weight: 3.0
+
+  methods:
+    description: "Sequencing and analysis methods"
+    terms:
+      - long-read sequencing
+      - metagenomic assembly
+      - strain tracking
+      - virome
+    weight: 2.5
+
+scoring:
+  topic_relevance_weight: 0.35
+  recency_weight: 0.20
+  signal_weight: 0.35
+  source_weight: 0.10
+
+outputs:
+  - dashboard
+  - csv
+  - bibtex
+  - markdown
